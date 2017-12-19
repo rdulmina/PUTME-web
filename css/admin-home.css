@@ -1,0 +1,34 @@
+.request-icon{
+    float: right;
+}
+
+.request-icon .envelop:hover{
+    color: #4cae4c;
+
+}
+.badge{
+    background-color: #2e6da4;
+}
+
+.badge:hover{
+    background-color: #4cae4c;
+}
+
+.view-all{
+    font-size: 70%;
+    font-weight: bold;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 10px;
+}
