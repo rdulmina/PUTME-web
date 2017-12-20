@@ -1,4 +1,14 @@
 
+// to change the filter when clicked
+$(document).ready(function(e){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+        e.preventDefault();
+        var param = $(this).attr("href").replace("#","");
+        var concept = $(this).text();
+        $('.search-panel span#search_concept').text(concept);
+        $('.input-group #search_param').val(param);
+    });
+});
 
 // load content dynamically to content div from sidebar
 $("a").filter(".ref").click(function(){
@@ -20,6 +30,9 @@ setInterval(function(){
         {
             if (data!=0){
                 $('#request_count').html(data+" NEW");
+            }
+            else {
+                $('#request_count').html("");
             }
         }
     });
