@@ -1,12 +1,10 @@
 <!-- BEGIN # MODAL LOGIN -->
 
-
-<link rel="stylesheet" href="../css/loginstyle.css">
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header" align="center">
-                <img class="img-circle" id="img_logo" src="img/aweera.png">
+                <img class="img-circle" id="img_logo" src="img/logo-original.png">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                 </button>

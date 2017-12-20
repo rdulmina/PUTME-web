@@ -15,11 +15,11 @@
 
 #login-modal .modal-dialog {
     width: 350px;
-    background: #000;
+    background: #05342c;
 }
 
 .modal-content{
-    background: #212121;
+    background: #ffffff;
     /*height: 500px;*/
 }
 
@@ -77,8 +77,8 @@
 }
 
 #img_logo {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 50px;
+    margin-left: 100px;
 }
 
 /* #########################################
@@ -168,7 +168,7 @@
     text-align: center;
 }
 .my-login-form input{
-    background-color:#212121 ;
+    background-color: #05685e;
     border-color: #a4a4a4;
     color: #e0e0e0;
 }
@@ -223,4 +223,8 @@
 
 .logout-content .name-tag{
     font-size: 110%;
+}
+
+p {
+    color: #064d43;
 }

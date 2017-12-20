@@ -32,3 +32,9 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
 });
+
+
+// load register requests
+function displayFilledRequests() {
+    $('#content').load("../view/manage-filled-requests.php");
+}
