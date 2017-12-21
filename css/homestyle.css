@@ -46,6 +46,7 @@ body{
 
 .background-theme{
 	background-image: url('../img/main-background.jfif');
+	background-attachment: fixed;
 }
 
 .background-theme h2{

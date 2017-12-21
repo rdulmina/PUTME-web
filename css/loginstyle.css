@@ -27,6 +27,7 @@
     margin-top: 10px;
 }
 
+
 #div-login-msg,
 #div-lost-msg,
 #div-register-msg {
@@ -78,7 +79,6 @@
 
 #img_logo {
     max-height: 50px;
-    margin-left: 100px;
 }
 
 /* #########################################
@@ -167,9 +167,11 @@
 .my-msg p{
     text-align: center;
 }
+
+
 .my-login-form input{
-    background-color: #05685e;
-    border-color: #a4a4a4;
+    background-color: #b5b5b5;
+    border-color: #006a6e;
     color: white;
 }
 
@@ -228,15 +230,22 @@
 p {
     color: #064d43;
 }
+
 #login_username{
-    color: white;
+    color: #05342c;
 }
 #login_password{
-    color: white;
+    color: #05342c;
 }
+
 .my-lg-button{
     background-color: #00695c;
 }
+
+.my-lg-button:hover{
+    background-color: #089c8c;
+}
+
 #login{
-    color:#00695c ;
+    color:#00695c;
 }
