@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>PUT ME</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,27 +38,24 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active" style="background-image: url('img/home1.jpg')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+              <h3></h3>
+              <p></p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item">
-
-              <a href="#"><img class="embed-responsive" id="secondimage" src="img/smart-trash-collectionlory.jpg" style="width: 110%; height: 500px" ></a>
-
-              <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
+          <div class="carousel-item" style="background-image: url('img/home2.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <!--<h3>Second Slide</h3>
+              <p>This is a description for the second slide.</p>-->
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('img/home3.jpg')">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
+              <!--<h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p>-->
             </div>
           </div>
         </div>
@@ -87,7 +84,7 @@
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary my-lg-button">Learn More</a>
             </div>
           </div>
         </div>
@@ -98,7 +95,7 @@
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary my-lg-button">Learn More</a>
             </div>
           </div>
         </div>
@@ -109,7 +106,7 @@
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-primary my-lg-button">Learn More</a>
             </div>
           </div>
         </div>
@@ -117,7 +114,7 @@
       <!-- /.row -->
 
       <!-- Portfolio Section -->
-      <h2>Portfolio Heading</h2>
+      <!--<h2>Portfolio Heading</h2>
 
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
@@ -190,7 +187,7 @@
       <!-- /.row -->
 
       <!-- Features Section -->
-      <div class="row">
+      <!--<div class="row">
         <div class="col-lg-6">
           <h2>Modern Business Features</h2>
           <p>The Modern Business template by Start Bootstrap includes:</p>
@@ -208,13 +205,13 @@
         <div class="col-lg-6">
           <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
         </div>
-      </div>
+      </div>-->
       <!-- /.row -->
 
-      <hr>
+      <!--<hr>-->
 
       <!-- Call to Action Section -->
-      <div class="row mb-4">
+    <!--  <div class="row mb-4">
         <div class="col-md-8">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
         </div>
@@ -223,20 +220,16 @@
         </div>
       </div>
 
-    </div>
+    </div>-->
     <?php include "view/login-modal.php";?>
 
-//
-//
-//  $controller = new LogIn();
-//  $controller->invoke();?>
 
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Copyright &copy; TryCatch++ 2017</p>
       </div>
       <!-- /.container -->
     </footer>

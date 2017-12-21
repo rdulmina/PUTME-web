@@ -41,7 +41,7 @@ if(!isset($_SESSION['user_id']) || ($_SESSION['type']!="Administrator")){
 
         <!-- Page Heading/Breadcrumbs -->
         <h1 class="mt-4 mb-3 title-bar">Admin Home
-            <small>Your Name Here</small>
+            <small><?php echo $_SESSION['first_name']." ".$_SESSION['last_name']?></small>
             <div class="request-icon">
                 <span role="button" class="badge badge-pill badge-info" id="request_count" onclick="displayFilledRequests()"></span>
                 <i role="button" class="fa fa-envelope-o envelop" aria-hidden="true" onclick="displayFilledRequests()"></i>
@@ -55,13 +55,11 @@ if(!isset($_SESSION['user_id']) || ($_SESSION['type']!="Administrator")){
             <!-- Sidebar Column -->
             <div class="col-lg-3 mb-4">
                 <div id="side-bar-list" class="list-group my-sidebar-item">
-                    <a href="" id="admin_appointment" class="list-group-item ref">Appointments</a>
+                    <a href="" class="list-group-item ref">Manage Drivers</a>
+                    <a href="" class="list-group-item ref">Manage Bins</a>
                     <a href="" class="list-group-item ref">Manage Users</a>
                     <a href="" class="list-group-item ref">Manage Customers</a>
-                    <a href="" class="list-group-item ref">Register Customer</a>
-                    <a href="" class="list-group-item ref">Manage Gallery</a>
-                    <a href="" class="list-group-item ref">Join Requests</a>
-                    <a href="" class="list-group-item ref">Manage Suggestions</a>
+                    <a href="" id="admin_appointment" class="list-group-item ref">History</a>
                 </div>
             </div>
 
@@ -81,7 +79,7 @@ if(!isset($_SESSION['user_id']) || ($_SESSION['type']!="Administrator")){
     <!-- Footer -->
     <footer class="">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Copyright &copy; TryCatch++ 2017</p>
       </div>
       <!-- /.container -->
     </footer>

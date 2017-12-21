@@ -4,7 +4,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header" align="center">
-                <img class="img-circle" id="img_logo" src="img/logo-original.png">
+                <img id="img_logo" src="img/logo-original.png" style="margin-left: 100px;">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                 </button>
@@ -29,8 +29,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <div>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block my-lg-button">Login</button>
+                        <div class="col-md-5 text-center" style="margin-right: 30%">
+                            <button role="button" type="submit" class="btn btn-primary btn-lg btn-block my-lg-button">Log In</button>
                         </div>
 
                     </div>
