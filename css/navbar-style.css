@@ -57,3 +57,11 @@
 p{
     color: white;
 }
+
+.my-navbar a {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}

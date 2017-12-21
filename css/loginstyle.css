@@ -1,16 +1,16 @@
 @font-face{
     font-family: myfont;
-    src: url('../fonts/constantine.ttf');
+    src: url('../fonts/Raleway-Thin.ttf');
 }
 
 @font-face{
     font-family: bodyfont;
-    src: url('../fonts/Merriweather-Regular.ttf');
+    src: url('../fonts/Raleway-Thin.ttf');
 }
 
 @font-face{
     font-family: paragraphfont;
-    src: url('../fonts/cantora.ttf');
+    src: url('../fonts/Raleway-Regular.ttf');
 }
 
 #login-modal .modal-dialog {
@@ -92,7 +92,7 @@
 
 .modal-content {
     /*background: linear-gradient(#212121,#000);*/
-    background-image: url("../img/panel-default-background.jpg");
+    //background-image: url("../img/panel-default-background.jpg");
     border: 1px solid #bdc3c7;
     border-radius: 0px;
     outline: 0;
@@ -138,11 +138,11 @@
 
 .btn-link {
     padding: 5px 10px 0px 0px;
-    color: #95a5a6;
+    color: #00695c;
 }
 
 .btn-link:hover, .btn-link:focus {
-    color: #2c3e50;
+    color: #00695c;
     text-decoration: none;
 }
 
@@ -170,7 +170,7 @@
 .my-login-form input{
     background-color: #05685e;
     border-color: #a4a4a4;
-    color: #e0e0e0;
+    color: white;
 }
 
 .gender-selector{
@@ -209,7 +209,7 @@
 
 .logout-content .dropdown-menu{
     border-color: #fff;
-    background-image: url("../img/panel-default-header2.jpg");
+    //background-image: url("../img/panel-default-header2.jpg");
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center;
@@ -227,4 +227,16 @@
 
 p {
     color: #064d43;
+}
+#login_username{
+    color: white;
+}
+#login_password{
+    color: white;
+}
+.my-lg-button{
+    background-color: #00695c;
+}
+#login{
+    color:#00695c ;
 }
