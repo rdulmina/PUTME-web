@@ -45,8 +45,11 @@
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('')">
-            <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-item">
+
+              <a href="#"><img class="embed-responsive" id="secondimage" src="img/smart-trash-collectionlory.jpg" style="width: 110%; height: 500px" ></a>
+
+              <div class="carousel-caption d-none d-md-block">
               <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
             </div>
