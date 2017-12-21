@@ -122,4 +122,15 @@ class FilledRequest
             echo $e;
         }
     }
+
+    public function sendFilledRequest($bin_id){
+        $query= "INSERT INTO filled_request(bin_id,is_filled) VALUES('".$bin_id."','Filled')";
+        try{
+            $result = self::$db->executeQuery($query);
+            return $result;
+
+        }catch (Exception $e){
+            echo $e;
+        }
+    }
 }

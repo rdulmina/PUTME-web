@@ -61,6 +61,23 @@ class Driver
             echo $e;
         }
     }
+
+    public function getDriverNumber($driver_id)
+    {
+        $number = '';
+        $query= "SELECT * FROM driver WHERE driver_id='".$driver_id."'";
+        try{
+            $result = self::$db->executeQuery($query);
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $number = $row["phoneno"];
+            }
+            return $number;
+
+        }catch (Exception $e){
+            echo $e;
+        }
+    }
 }
 
 ?>

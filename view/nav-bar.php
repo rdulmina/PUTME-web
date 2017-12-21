@@ -13,17 +13,11 @@
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="view/admin-home.php">Admin Home</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
-                
-                <li class="nav-link menu link-1" id="login"><a href="#" data-toggle="modal" data-target="#login-modal" ><i class="fa fa-unlock-alt"></i>Log In</a></li>";
-
 
                 <div class="collapse navbar-collapse">
 
@@ -61,7 +55,9 @@
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <p>
-                                                        <a href="" class="btn btn-danger btn-block">Log Out</a>
+                                                    <form>
+                                                        <input class="btn btn-danger btn-block my-lg-button-danger" type="submit" value="Log Out" formaction="../controller/logout.php">
+                                                    </form>
                                                     </p>
                                                 </div>
                                             </div>

@@ -40,10 +40,8 @@
 
 .my-navbar .username:hover{
     color: white;
-    border: solid;
-    border-width: thin;
-    border-color: white;
 }
+
 .my-navbar .username .focus{
     color: black;
 }

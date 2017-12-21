@@ -1,3 +1,12 @@
+<?php session_start();?>
+
+<?php
+// checking if an user is logged in
+if(!isset($_SESSION['user_id']) || ($_SESSION['type']!="Administrator")){
+    header ('Location: ../index.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

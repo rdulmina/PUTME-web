@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +27,7 @@
 
   <body class="background-theme">
 
-  <?php include "view/nav-bar.php";?>
+  <?php include "view/nav-bar-without-logout.php";?>
 
     <header>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
