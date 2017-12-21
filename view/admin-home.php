@@ -11,7 +11,7 @@
     <title>PUT ME</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="../css/modern-business.css" rel="stylesheet">
@@ -55,8 +55,9 @@
                     <a href="" class="list-group-item ref">Manage Suggestions</a>
                 </div>
             </div>
+
             <!-- Content Column -->
-            <div id="content" class="col-lg-9 mb-4">
+            <div id="content" class="col-md-9 loaded-content">
 
                 <h2>Welcome</h2>
                 <p>This is the Admin Panel</p>
@@ -77,7 +78,7 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../js/jquery.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/admin_home.js"></script>
 
