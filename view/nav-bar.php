@@ -41,7 +41,7 @@
                                                 <input id="user_edit" type="hidden" value="">
                                                 <div class="col-lg-8">
                                                     <p class="text-left"><strong><?php echo $_SESSION['first_name']." ".$_SESSION['last_name']; ?></strong></p>
-                                                    <p class="text-left small"><?php echo $_SESSION['email']; ?></p>
+                                                    <p class="text-left small" style="color: white;"><?php echo $_SESSION['email']; ?></p>
                                                     <p class="text-left">
                                                         <a href="#" class="btn btn-primary btn-block btn-sm">Edit Profile</a>
                                                     </p>

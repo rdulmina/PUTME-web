@@ -77,7 +77,7 @@
 
       <!-- Marketing Icons Section -->
       <div class="row">
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 mb-4 text-center">
           <div class="card h-100">
             <h4 class="card-header">Smarter Than Humans</h4>
             <div class="card-body">
@@ -88,11 +88,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 mb-4 text-center">
           <div class="card h-100">
             <h4 class="card-header">Ease of use</h4>
             <div class="card-body">
-              <br class="card-text">No constant mixing or turning</br>
+              <p class="card-text">No constant mixing or turning</br>
 
                   Forgiving & flexible system</br>
 
@@ -105,7 +105,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 mb-4 text-center">
           <div class="card h-100">
             <h4 class="card-header">Value for money</h4>
             <div class="card-body">
