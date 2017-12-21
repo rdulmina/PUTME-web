@@ -73,15 +73,15 @@
     <!-- Page Content -->
     <div class="container">
 
-      <h1 class="my-4">Welcome to Modern Business</h1>
+      <h1 class="my-4">Welcome</h1>
 
       <!-- Marketing Icons Section -->
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
+            <h4 class="card-header">Smarter Than Humans</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <p class="card-text"> PutMe is more than just data, it's smart. It processes the data it collects through a series of highly sophisticated analytical and algorithmic tools to determine the optimal time to empty the bin.</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary my-lg-button">Learn More</a>
@@ -90,9 +90,15 @@
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
+            <h4 class="card-header">Ease of use</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
+              <br class="card-text">No constant mixing or turning</br>
+
+                  Forgiving & flexible system</br>
+
+                  Easy to teach authorized labour</br>
+
+                  Lifetime support & handholding</p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary my-lg-button">Learn More</a>
@@ -101,9 +107,11 @@
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <h4 class="card-header">Card Title</h4>
+            <h4 class="card-header">Value for money</h4>
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                <p class="card-text">Long lasting – lasts over 10 years.</br>
+
+                    The system also employs duty cycle technique to reduce power consumption and to maximize operational time. </p>
             </div>
             <div class="card-footer">
               <a href="#" class="btn btn-primary my-lg-button">Learn More</a>
