@@ -73,10 +73,13 @@ function fetchDrivers(location) {
 function assignDriver(){
     var driver_id = document.getElementById('select_driver_name').value;
     var req_id = document.getElementById('view_req_id').value;
+    var bin_id = document.getElementById('view_bin_id').value;
+    var location = document.getElementById('view_location').value;
+    var description = document.getElementById('view_description').value;
     $.ajax({
         url:"../controller/update-driver-status-handler.php",
         method: "post",
-        data: {driver_id:driver_id,req_id:req_id},
+        data: {driver_id:driver_id,req_id:req_id,bin_id:bin_id,location:location,description:description},
         dataType: "json",
         cache: false,
         success:function (data) {

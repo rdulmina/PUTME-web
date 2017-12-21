@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2017 at 06:12 PM
+-- Generation Time: Dec 21, 2017 at 09:42 AM
 -- Server version: 5.7.9
 -- PHP Version: 5.6.16
 
@@ -65,8 +65,8 @@ CREATE TABLE IF NOT EXISTS `driver` (
 
 INSERT INTO `driver` (`driver_id`, `name`, `phoneno`, `is_assigned`) VALUES
 (1, 'Wasantha Perera', '0775396038', 0),
-(2, 'Heshan Silva', '0768526186', 0),
-(3, 'Dinith Alwis', '0775756550', 0),
+(2, 'Heshan Silva', '0768526186', 1),
+(3, 'Dinith Alwis', '0775756550', 1),
 (4, 'Krishan Soyza', '0711625552', 0),
 (5, 'Lalith Perera', '0717224850', 0);
 
@@ -113,14 +113,16 @@ CREATE TABLE IF NOT EXISTS `filled_request` (
   `bin_id` varchar(10) NOT NULL,
   `is_filled` varchar(20) NOT NULL DEFAULT 'Filled',
   PRIMARY KEY (`req_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `filled_request`
 --
 
 INSERT INTO `filled_request` (`req_id`, `bin_id`, `is_filled`) VALUES
-(1, '1', 'Filled');
+(1, '1', 'Driver Sent'),
+(2, '2', 'Driver Sent'),
+(3, '3', 'Filled');
 
 -- --------------------------------------------------------
 
@@ -130,12 +132,34 @@ INSERT INTO `filled_request` (`req_id`, `bin_id`, `is_filled`) VALUES
 
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
-  `userid` varchar(50) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  PRIMARY KEY (`userid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  `last_login` datetime DEFAULT NULL,
+  `is_deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `type` varchar(15) NOT NULL,
+  `user_reg_id` varchar(20) NOT NULL,
+  `profile_pic` varchar(30) NOT NULL DEFAULT 'none.jpg',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `first_name`, `last_name`, `email`, `password`, `last_login`, `is_deleted`, `type`, `user_reg_id`, `profile_pic`) VALUES
+(17, 'Thilakshika', 'Udyani', 'thilakshika@gmail.com', '900150983cd24fb0d6963f7d28e17f72', '2017-12-20 20:48:12', 0, 'Receptionist', 'EMP0000002', '5a2add240a3460.91513380.jpg'),
+(18, 'Wasura', 'Wattearachchi', 'wasuradananjith@gmail.com', '900150983cd24fb0d6963f7d28e17f72', '2017-12-18 18:27:30', 0, 'Administrator', 'EMP0000001', '5a306cd8ccad09.02894929.jpg'),
+(19, 'Ama', 'Ganepola', 'vishni@gmail.com ', '900150983cd24fb0d6963f7d28e17f72', '2017-12-11 13:58:46', 0, 'Customer', 'REG0000001', 'none.jpg'),
+(29, 'Hisan', 'Hunais', 'hisanhunais.live@gmail.com', '900150983cd24fb0d6963f7d28e17f72', '2017-12-18 18:29:06', 0, 'Customer', 'REG0000004', '5a2c32a3dfc7a8.03655996.jpg'),
+(30, 'Sandunika', 'Wattearachchi', 'sw97100@gmail.com', '900150983cd24fb0d6963f7d28e17f72', NULL, 0, 'Customer', 'REG0000005', 'none.jpg'),
+(31, 'Vishni', 'Ganepola', 'homewsp@gmail.com', '900150983cd24fb0d6963f7d28e17f72', '2017-12-11 19:52:02', 0, 'Customer', 'REG0000007', '5a2e933379e333.25494883.jpg'),
+(35, 'Shehan', 'Dinuka', 'homewsp@gmail.com', '900150983cd24fb0d6963f7d28e17f72', NULL, 0, 'Customer', 'REG0000008', 'none.jpg'),
+(36, 'Hermione', 'Granger', 'wasuradananjith@ieee.org', '900150983cd24fb0d6963f7d28e17f72', NULL, 0, 'Customer', 'REG0000009', 'none.jpg'),
+(37, 'Shehan', 'Dinuka', 'homewsp@gmail.com', '900150983cd24fb0d6963f7d28e17f72', NULL, 0, 'Customer', 'REG0000008', 'none.jpg'),
+(42, 'Dharana', 'Weerawarna', 'wdharana@gmail.com', '900150983cd24fb0d6963f7d28e17f72', '2017-12-11 08:31:14', 0, 'Beautician', 'EMP0000003', '5a2d6b19d00ed9.39493558.jpg');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
