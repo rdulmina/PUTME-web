@@ -221,6 +221,11 @@
     </div>
     <?php include "view/login-modal.php";?>
 
+//
+//
+//  $controller = new LogIn();
+//  $controller->invoke();?>
+
     <!-- /.container -->
 
     <!-- Footer -->

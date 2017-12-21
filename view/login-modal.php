@@ -18,7 +18,7 @@
                     <div class="modal-body">
                         <div id="div-login-msg">
                             <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
-                            <span id="text-login-msg" class="my-msg"><p>Type your email and password.</p></span>
+                            <span id="text-login-msg" class="my-msg"><p>Type your Email and Password.</p></span>
                         </div>
                         <input id="login_username" class="form-control" type="text" placeholder="Email" required>
                         <input id="login_password" class="form-control" type="password" placeholder="Password" required>
@@ -32,10 +32,7 @@
                         <div>
                             <button type="submit" class="btn btn-primary btn-lg btn-block my-lg-button">Login</button>
                         </div>
-                        <div>
-                            <!--<button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>-->
-                            <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
-                        </div>
+
                     </div>
                 </form>
                 <!-- End # Login Form -->
