@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.2
--- http://www.phpmyadmin.net
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 21, 2017 at 05:27 PM
--- Server version: 5.7.9
--- PHP Version: 5.6.16
+-- Generation Time: Apr 18, 2018 at 09:00 AM
+-- Server version: 10.1.28-MariaDB
+-- PHP Version: 7.1.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -26,12 +28,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `bin`
 --
 
-DROP TABLE IF EXISTS `bin`;
-CREATE TABLE IF NOT EXISTS `bin` (
+CREATE TABLE `bin` (
   `bin_id` varchar(10) NOT NULL,
   `location` varchar(50) NOT NULL,
-  `description` varchar(50) NOT NULL,
-  PRIMARY KEY (`bin_id`)
+  `description` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -50,14 +50,12 @@ INSERT INTO `bin` (`bin_id`, `location`, `description`) VALUES
 -- Table structure for table `driver`
 --
 
-DROP TABLE IF EXISTS `driver`;
-CREATE TABLE IF NOT EXISTS `driver` (
-  `driver_id` int(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `driver` (
+  `driver_id` int(20) NOT NULL,
   `name` varchar(50) NOT NULL,
   `phoneno` varchar(10) NOT NULL,
-  `is_assigned` tinyint(1) NOT NULL,
-  PRIMARY KEY (`driver_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+  `is_assigned` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `driver`
@@ -76,11 +74,9 @@ INSERT INTO `driver` (`driver_id`, `name`, `phoneno`, `is_assigned`) VALUES
 -- Table structure for table `driver_location`
 --
 
-DROP TABLE IF EXISTS `driver_location`;
-CREATE TABLE IF NOT EXISTS `driver_location` (
+CREATE TABLE `driver_location` (
   `driver_id` int(10) NOT NULL,
-  `area` varchar(40) NOT NULL,
-  PRIMARY KEY (`driver_id`,`area`)
+  `area` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -107,13 +103,11 @@ INSERT INTO `driver_location` (`driver_id`, `area`) VALUES
 -- Table structure for table `filled_request`
 --
 
-DROP TABLE IF EXISTS `filled_request`;
-CREATE TABLE IF NOT EXISTS `filled_request` (
-  `req_id` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `filled_request` (
+  `req_id` int(10) NOT NULL,
   `bin_id` varchar(10) NOT NULL,
-  `is_filled` varchar(20) NOT NULL DEFAULT 'Filled',
-  PRIMARY KEY (`req_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+  `is_filled` varchar(20) NOT NULL DEFAULT 'Filled'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `filled_request`
@@ -130,9 +124,8 @@ INSERT INTO `filled_request` (`req_id`, `bin_id`, `is_filled`) VALUES
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE IF NOT EXISTS `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
@@ -141,9 +134,8 @@ CREATE TABLE IF NOT EXISTS `user` (
   `is_deleted` tinyint(1) NOT NULL DEFAULT '0',
   `type` varchar(15) NOT NULL,
   `user_reg_id` varchar(20) NOT NULL,
-  `profile_pic` varchar(30) NOT NULL DEFAULT 'none.jpg',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=latin1;
+  `profile_pic` varchar(30) NOT NULL DEFAULT 'none.jpg'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
@@ -159,7 +151,67 @@ INSERT INTO `user` (`id`, `first_name`, `last_name`, `email`, `password`, `last_
 (35, 'Shehan', 'Dinuka', 'homewsp@gmail.com', '900150983cd24fb0d6963f7d28e17f72', NULL, 0, 'Customer', 'REG0000008', 'none.jpg'),
 (36, 'Hermione', 'Granger', 'wasuradananjith@ieee.org', '900150983cd24fb0d6963f7d28e17f72', NULL, 0, 'Customer', 'REG0000009', 'none.jpg'),
 (37, 'Shehan', 'Dinuka', 'homewsp@gmail.com', '900150983cd24fb0d6963f7d28e17f72', NULL, 0, 'Customer', 'REG0000008', 'none.jpg'),
-(42, 'Dharana', 'Weerawarna', 'wdharana@gmail.com', '900150983cd24fb0d6963f7d28e17f72', '2017-12-11 08:31:14', 0, 'Beautician', 'EMP0000003', '5a2d6b19d00ed9.39493558.jpg');
+(42, 'Dharana', 'Weerawarna', 'wdharana@gmail.com', '900150983cd24fb0d6963f7d28e17f72', '2017-12-11 08:31:14', 0, 'Beautician', 'EMP0000003', '5a2d6b19d00ed9.39493558.jpg'),
+(50, '', '', '', 'd41d8cd98f00b204e9800998ecf8427e', NULL, 0, '', '', 'none.jpg'),
+(51, 'Peter', 'Pan', 'peter@gmail.com', '900150983cd24fb0d6963f7d28e17f72', NULL, 0, '', '', 'none.jpg'),
+(52, 'Kara', 'Danverse', 'kara@gmail.com', '900150983cd24fb0d6963f7d28e17f72', NULL, 0, '', '', 'none.jpg');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `bin`
+--
+ALTER TABLE `bin`
+  ADD PRIMARY KEY (`bin_id`);
+
+--
+-- Indexes for table `driver`
+--
+ALTER TABLE `driver`
+  ADD PRIMARY KEY (`driver_id`);
+
+--
+-- Indexes for table `driver_location`
+--
+ALTER TABLE `driver_location`
+  ADD PRIMARY KEY (`driver_id`,`area`);
+
+--
+-- Indexes for table `filled_request`
+--
+ALTER TABLE `filled_request`
+  ADD PRIMARY KEY (`req_id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `driver`
+--
+ALTER TABLE `driver`
+  MODIFY `driver_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `filled_request`
+--
+ALTER TABLE `filled_request`
+  MODIFY `req_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
