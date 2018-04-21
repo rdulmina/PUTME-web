@@ -68,6 +68,7 @@ class FilledRequest
                                     <th>Status</th>
                                     <th>Location</th>
                                     <th>Description</th>
+                                    <th>Who sent?</th>
                                     <th>Check</th>
                                 </tr>
                                 </thead>
@@ -82,6 +83,7 @@ class FilledRequest
                     $request_list.= "<td>{$request['is_filled']}</td>";
                     $request_list.= "<td>{$request['location']}</td>";
                     $request_list.= "<td>{$request['description']}</td>";
+                    $request_list.= "<td>{$request['email']}</td>";
                     $request_list.= "<td><button class=\"btn btn-primary btn-sm edit_data\" name=\"edit\" value=\"Edit\" id=\"{$request['req_id']}\"><i class=\"fa fa-eye\" aria-hidden=\"true\"></i> Check</button></td>";
                      $request_list.= "</tr>";
                 }
@@ -123,8 +125,8 @@ class FilledRequest
         }
     }
 
-    public function sendFilledRequest($bin_id){
-        $query= "INSERT INTO filled_request(bin_id,is_filled) VALUES('".$bin_id."','Filled')";
+    public function sendFilledRequest($bin_id,$email){
+        $query= "INSERT INTO filled_request(bin_id,is_filled,email) VALUES('".$bin_id."','Filled','".$email."')";
         try{
             $result = self::$db->executeQuery($query);
             return $result;

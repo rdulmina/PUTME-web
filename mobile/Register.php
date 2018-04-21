@@ -30,11 +30,11 @@ if (mysqli_num_rows($result)==0){
 		$result_next = mysqli_query($conn,$query_next);
 		if ($result_next){
 			$output["status"]=1;
-			$output["inf"]="Successfully Registered!";
+			$output["inf"]="<br>Successfully Registered!";
 		}
 		else{
 			$output["status"]=0;
-			$output["inf"]="Registration Unsuccessful!";
+			$output["inf"]="<br>Registration Unsuccessful!";
 		}
 
 	}

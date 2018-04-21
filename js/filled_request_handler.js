@@ -49,6 +49,7 @@ $(document).ready(function (){
                 $('#view_is_filled').val(data.is_filled);
                 $('#view_location').val(data.location);
                 $('#view_description').val(data.description);
+                $('#view_email').val(data.email);
                 fetchDrivers(data.location);
             }
         });

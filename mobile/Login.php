@@ -23,7 +23,7 @@ if (mysqli_num_rows($result)>0){
 	$result_next = mysqli_query($conn,$query_next);
 	if (mysqli_num_rows($result_next)>0){
 		$output["status"]=1;
-		$output["inf"]="Login Successful!";
+		$output["inf"]="<br>Login Successful!";
 	}
 	else{
 		$output["status"]=0;
