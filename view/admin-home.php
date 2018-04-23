@@ -55,9 +55,9 @@ if(!isset($_SESSION['user_id']) || ($_SESSION['type']!="Administrator")){
             <!-- Sidebar Column -->
             <div class="col-lg-3 mb-4">
                 <div id="side-bar-list" class="list-group my-sidebar-item">
-                    <a href="" class="list-group-item ref">Manage Drivers</a>
-                    <a href="" class="list-group-item ref">Manage Bins</a>
-                    <a href="" class="list-group-item ref">Manage Users</a>
+                    <a href="manage-drivers.php" class="list-group-item ref">Manage Drivers</a>
+                    <a href="manage-bins.php" class="list-group-item ref">Manage Bins</a>
+                    <a href="manage-users.php" class="list-group-item ref">Manage Users</a>
                     <a href="" class="list-group-item ref">Manage Customers</a>
                     <a href="" id="admin_appointment" class="list-group-item ref">History</a>
                 </div>
