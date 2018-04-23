@@ -6,7 +6,7 @@
 // check whether reg id is not empty
 if (isset($_GET["binNumber"])){
     $driver = new FilledRequest();
-    $result =$driver -> sendFilledRequest($_GET["binNumber"]);
+    $result =$driver -> sendFilledRequest($_GET["binNumber"],"Smart Bin");
     if ($result){
         echo "Request Sent Successfully";
     }
