@@ -88,7 +88,12 @@ if(!isset($_SESSION['user_id']) || ($_SESSION['type']!="Administrator")){
     <script src="../js/jquery.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/admin_home.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $('#content').load('manage-filled-requests.php');
+        });
 
+    </script>
   </body>
 
 </html>

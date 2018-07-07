@@ -22,10 +22,10 @@ class SMS
 
     // default constructor
     function __construct(){
-        self::$sid = 'AC24f1ec381b7f06810f829bbd91c2f855';
-        self::$token = 'c4c85fc9ee1d54a6b9e9173e18c9660c';
+        self::$sid = 'AC2dd8510e1050de86a5e2401fbb4247fc';
+        self::$token = '3097178934fd53ce73af0d332611db8b';
         self::$client = new Client(self::$sid, self::$token);
-        self::$phoneNumber = '+12132931197';
+        self::$phoneNumber = '+19792436762';
     }
 
     // send the sms to the driver
